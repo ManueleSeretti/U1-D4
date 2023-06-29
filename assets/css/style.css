@@ -10,10 +10,15 @@
   width: 450px;
   background-color: #0099bb;
   text-align: center;
-  margin: 10px;
+  margin-inline: auto;
   padding-block: 35px;
+  text-transform: uppercase;
 }
-.menu {
+.menu ul {
+  list-style: none;
+}
+.menu li a {
+  color: white;
 }
 /* MAIN */
 .main {
@@ -30,30 +35,72 @@
   font-size: 45px;
   margin: 10px;
 }
+h1 + p {
+  color: #a0a0a0;
+}
 .articolo * {
   margin: 10px;
 }
 .articolo strong {
   color: violet;
 }
-
+code {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: lightgray;
+  text
+}
+ul,
+ol {
+  padding-inline: 20px;
+}
 .video {
   text-align: center;
+}
+.video iframe {
+  border-radius: 10px;
+  width: 450;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
+table {
+  margin-bottom: 2em;
+}
+caption {
+  font-weight: bold;
+  font-style: italic;
+}
+thead tr {
+  background-color: #3f6bca;
+  color: #ffffff;
+}
 th,
-tr,
 td {
-  border: 1px, solid black;
+  padding: 12px 15px;
+  vertical-align: bottom;
   text-align: center;
 }
-li {
-  padding-inline: 20px;
+tbody tr {
+  border-bottom: 1px solid #dddddd;
 }
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #3f6bca;
+}
+
 /* FORM */
 .form {
+  background-color: #ddddde;
+}
+.form h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
 }
 /* ELEMENTI NELL' ASIDE */
 .correlati {
@@ -61,6 +108,10 @@ li {
   background-color: #ddddde;
   padding: 20px;
   margin: 20px;
+}
+.data {
+  text-align: right;
+  margin-block-start: 5px;
 }
 /* FOOTER */
 .footer {
